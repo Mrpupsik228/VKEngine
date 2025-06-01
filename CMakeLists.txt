@@ -10,7 +10,7 @@ find_package(Vulkan REQUIRED)
 find_package(glfw3)
 find_package(glm)
 
-set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(VKEngine_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(VKEngine_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 IF(NOT glfw3_FOUND)
