@@ -16,6 +16,10 @@ Window::~Window() {
     if (window) {
         glfwDestroyWindow(window);
     }
-    
+
     glfwTerminate();
+}
+
+bool Window::isRunning() {
+    return !glfwWindowShouldClose(window);
 }

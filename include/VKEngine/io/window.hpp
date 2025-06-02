@@ -10,6 +10,8 @@ class Window {
 public:
     Window(int width, int height, std::string title);
     ~Window();
+
+    bool isRunning();
     
 private:
     int width;
