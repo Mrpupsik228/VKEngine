@@ -23,3 +23,7 @@ Window::~Window() {
 bool Window::isRunning() {
     return !glfwWindowShouldClose(window);
 }
+
+void Window::pollEvents() {
+    glfwPollEvents();
+}

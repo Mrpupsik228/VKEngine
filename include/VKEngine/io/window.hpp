@@ -12,6 +12,8 @@ public:
     ~Window();
 
     bool isRunning();
+
+    void pollEvents();
     
 private:
     int width;
