@@ -27,3 +27,9 @@ bool Window::isRunning() {
 void Window::pollEvents() {
     glfwPollEvents();
 }
+
+void Window::swapBuffers() {
+    if (window) {
+        glfwSwapBuffers(window);
+    }
+}
