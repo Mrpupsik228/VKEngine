@@ -29,7 +29,5 @@ void Window::pollEvents() {
 }
 
 void Window::swapBuffers() {
-    if (window) {
-        glfwSwapBuffers(window);
-    }
+    glfwSwapBuffers(window);
 }
